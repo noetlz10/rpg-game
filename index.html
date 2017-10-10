@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mortal Kombat RPG</title>
+    <!--Reset css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+    <!--Latest Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--My Personal CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Ravi+Prakash" rel="stylesheet">
+    <!--jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!--Game Logic -->
+    <script src="assets/javascript/game.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="game-title">-</h1>
+            </div>
+        </div>
+        <div class="instruct">
+            <h2 id="instructions">Choose Your Fighter!</h2>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Fight Zone -->
+        <div class="row">
+            <div class="col-md-5">
+                <h2 id="chosen">Your Fighter</h2>
+                <div class="row chosenChar"></div>
+                <div class="myChar-health"></div>
+            </div>
+            <div class="col-md-2" id="attack">
+                <h2>Vs</h2>
+                <div class="button-group">
+                    <div class="btn btn-default btn-lg" id="attackButton">FIGHT!</div>
+                    <div class="restartbtn btn btn-default btn-lg" id="resetButton">Restart Game</div>
+                </div>
+            </div>
+
+            <div class="col-md-5" id="opponent">
+                <h2 id="opp">Opponent</h2>
+                <div class="row chosenOpp"></div>
+                <div class="opponent-health"></div>
+            </div>
+        </div>
+        <!-- End Fight Zone -->
+        <div class="row">
+            <div class="battle-details"></div>
+        </div>
+    </div>
+
+    <!-- Row of Fighters -->
+    <div class="row character-image selectCharacter">
+        <div class="container">
+            <div class="col-md-3">
+                <div class="scorpion"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="sub-zero"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="raiden"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="goro"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer -->
+    <div class="row">
+        <div class="col-md-12" id="footer">
+            <p>&copy; Noe Tellez | 2017</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
